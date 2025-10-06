@@ -6,9 +6,7 @@ int reverse(int arr[],int s)
     int i,temp;
     for(i=0;i<s/2;i++)
     {
-        temp=arr[i];
-        arr[i]=arr[s-(i+1)];
-        arr[s-(i+1)]=temp;        
+        swap(arr[i],arr[s-1]);       
     }
 }
 
